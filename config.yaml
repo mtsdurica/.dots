@@ -1,0 +1,65 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  f_bash_aliases:
+    src: bash_aliases
+    dst: ~/.bash_aliases
+  f_kitty.conf:
+    src: config/kitty/kitty.conf
+    dst: ~/.config/kitty/kitty.conf
+  f_theme.conf:
+    src: config/kitty/theme.conf
+    dst: ~/.config/kitty/theme.conf
+  d_nvim:
+    src: config/nvim
+    dst: ~/.config/nvim
+  d_helix:
+    src: config/helix
+    dst: ~/.config/helix
+  d_neofetch:
+    src: config/neofetch
+    dst: ~/.config/neofetch
+  f_bashrc:
+    src: bashrc
+    dst: ~/.bashrc
+  d_hypr:
+    src: config/hypr
+    dst: ~/.config/hypr
+  d_hyprv:
+    src: config/HyprV
+    dst: ~/.config/HyprV
+  d_swaylock:
+    src: config/swaylock
+    dst: ~/.config/swaylock
+  d_waybar:
+    src: config/waybar
+    dst: ~/.config/waybar
+  d_wlogout:
+    src: config/wlogout
+    dst: ~/.config/wlogout
+  d_wofi:
+    src: config/wofi
+    dst: ~/.config/wofi
+profiles:
+  archlinux:
+    dotfiles:
+    - f_bash_aliases
+    - f_kitty.conf
+    - f_theme.conf
+    - d_nvim
+    - d_helix
+    - d_neofetch
+    - f_bashrc
+    - d_hypr
+    - d_hyprv
+    - d_swaylock
+    - d_waybar
+    - d_wlogout
+    - d_wofi

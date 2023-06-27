@@ -1,0 +1,10 @@
+theme = "mts"
+
+[keys.normal]
+C-s = ":w"
+A-F = ":format"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"

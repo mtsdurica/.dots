@@ -1,0 +1,2 @@
+inherits = "monokai_pro_octagon"
+"ui.background" = { bg = "base1" }

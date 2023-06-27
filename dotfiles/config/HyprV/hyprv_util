@@ -1,0 +1,51 @@
+#!/bin/bash
+. ~/.config/HyprV/hyprv.conf
+
+update_theme() {
+    #set the xfce and GTK theme
+    xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
+    gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+    xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita-dark"
+    gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+}
+
+restart_waybar() {
+    #restart the waybar
+    pkill waybar
+    waybar & 
+}
+
+set_current_background() {
+    if [[ ! -z "$SET_BG" ]]; then
+        #set the current background
+        swww img ~/.config/HyprV/backgrounds/background.jpg
+    else
+        swww img $SET_BG
+    fi
+}
+
+switch_keyboard() {
+    hyprctl switchxkblayout $SET_KB next
+}
+
+if [[ "$1" == "reload" ]]; then
+    restart_waybar    
+elif [[ "$1" == "swkb" ]]; then
+    switch_keyboard
+    restart_waybar
+fi
+
+# need to show the version and tooltip
+TOOLTIP='Default Keybinds\n'\
+'SUPER + Q = Start Kitty\n'\
+'SUPER + SHIFT + X = Close Window\n'\
+'SUPER + L = Lock Screen\n'\
+'SUPER + M = Logout menu\n'\
+'SUPER + E = File Manager\n'\
+'SUPER + V = Toggle Float\n'\
+'SUPER + SPACE = App Launcher\n'\
+'SUPER + S = Screenshot\n'\
+'SUPER + T = Switch HyprV version\n'\
+'ALT + V = Open clipboard manager'
+
+echo '{"text": "'$SET_USR'", "tooltip": "'$TOOLTIP'"}'

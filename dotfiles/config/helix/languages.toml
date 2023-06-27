@@ -1,0 +1,7 @@
+[[language]]
+name = "c"
+file-types = ["c", "h"]
+comment-token = "//"
+indent = { tab-width = 4, unit = "\t" }
+formatter = { command = "clang-format", args = ["--style=microsoft"] }
+auto-format = true
