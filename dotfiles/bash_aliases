@@ -13,9 +13,7 @@ alias nvcf='nv ~/.config/nvim/init.vim'
 alias hxcf='hx ~/.config/helix/config.toml'
 
 # Dotdrop
-alias dotdrop='dotdrop --cfg=~/.dots/config.yaml'
-# Your dotdrop git repository location
 export DOTREPO="~/.dots"
-#alias dotdrop="$DOTREPO/dotdrop.sh"
+alias dotdrop="dotdrop --cfg=$DOTREPO/config.yaml"
 alias dotgit="git -C $DOTREPO"
-alias dotsync="dotgit pull && dotgit add -A && dotgit commit && dotgit push; dotdrop install"
+alias dotsync="dotgit add --all && dotgit commit -m 'Dotdrop sync' && dotgit push"
