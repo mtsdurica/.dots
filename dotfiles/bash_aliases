@@ -16,4 +16,9 @@ alias hxcf='hx ~/.config/helix/config.toml'
 export DOTREPO="~/.dots"
 alias dotdrop="dotdrop --cfg=$DOTREPO/config.yaml"
 alias dotgit="git -C $DOTREPO"
-alias dotsync="dotgit add --all && dotgit commit -m 'Dotdrop sync' && dotgit push"
+function dotsync() {
+	dotgit add --all;
+	dotgit commit -m "$1";
+	dotgit push;
+}
+
