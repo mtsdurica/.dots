@@ -2,7 +2,7 @@
 alias ls='exa --icons'
 alias la='ls -laa'
 alias cd='>/dev/null cd'
-alias neofetch='clear && nf'
+alias nf='clear && neofetch'
 
 # Text editors
 alias nv='nvim'
