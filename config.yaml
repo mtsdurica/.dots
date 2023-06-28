@@ -4,19 +4,13 @@ config:
   create: true
   dotpath: dotfiles
   keepdot: false
-  link_dotfile_default: nolink
+  link_dotfile_default: absolute
   link_on_import: nolink
   longkey: false
 dotfiles:
   f_bash_aliases:
     src: bash_aliases
     dst: ~/.bash_aliases
-  f_kitty.conf:
-    src: config/kitty/kitty.conf
-    dst: ~/.config/kitty/kitty.conf
-  f_theme.conf:
-    src: config/kitty/theme.conf
-    dst: ~/.config/kitty/theme.conf
   d_nvim:
     src: config/nvim
     dst: ~/.config/nvim
@@ -47,12 +41,13 @@ dotfiles:
   d_wofi:
     src: config/wofi
     dst: ~/.config/wofi
+  d_kitty:
+    src: config/kitty
+    dst: ~/.config/kitty
 profiles:
   archlinux:
     dotfiles:
     - f_bash_aliases
-    - f_kitty.conf
-    - f_theme.conf
     - d_nvim
     - d_helix
     - d_neofetch
@@ -63,3 +58,4 @@ profiles:
     - d_waybar
     - d_wlogout
     - d_wofi
+    - d_kitty
