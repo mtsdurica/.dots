@@ -7,6 +7,8 @@ config:
   link_dotfile_default: absolute
   link_on_import: nolink
   longkey: false
+  upignore:
+  - '*/home/mts/.config/google-chrome'
 dotfiles:
   f_bash_aliases:
     src: bash_aliases
