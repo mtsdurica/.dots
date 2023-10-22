@@ -1,0 +1,8 @@
+2023/10/22-23:44:46.316 3c05 Creating DB /home/mts/.config/google-chrome/Default/Sync Data/LevelDB since it was missing.
+2023/10/22-23:44:46.351 3c05 Reusing MANIFEST /home/mts/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2023/10/22-23:45:08.762 3bfa Level-0 table #5: started
+2023/10/22-23:45:08.782 3bfa Level-0 table #5: 124545 bytes OK
+2023/10/22-23:45:08.791 3bfa Delete type=0 #3
+2023/10/22-23:45:13.633 3c05 Level-0 table #7: started
+2023/10/22-23:45:13.645 3c05 Level-0 table #7: 55436 bytes OK
+2023/10/22-23:45:13.652 3c05 Delete type=0 #4
