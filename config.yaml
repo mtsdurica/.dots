@@ -7,15 +7,10 @@ config:
   link_dotfile_default: absolute
   link_on_import: nolink
   longkey: false
-  upignore:
-  - '*/home/mts/.config/google-chrome'
 dotfiles:
   f_bash_aliases:
     src: bash_aliases
     dst: ~/.bash_aliases
-  d_nvim:
-    src: config/nvim
-    dst: ~/.config/nvim
   d_helix:
     src: config/helix
     dst: ~/.config/helix
@@ -46,11 +41,34 @@ dotfiles:
   d_kitty:
     src: config/kitty
     dst: ~/.config/kitty
+  d_custom:
+    src: config/nvim/lua/custom
+    dst: ~/.config/nvim/lua/custom
+  f_chadrc.lua:
+    src: config/nvim/lua/custom/chadrc.lua
+    dst: ~/.config/nvim/lua/custom/chadrc.lua
+  d_configs:
+    src: config/nvim/lua/custom/configs
+    dst: ~/.config/nvim/lua/custom/configs
+  f_highlights.lua:
+    src: config/nvim/lua/custom/highlights.lua
+    dst: ~/.config/nvim/lua/custom/highlights.lua
+  f_init.lua:
+    src: config/nvim/lua/custom/init.lua
+    dst: ~/.config/nvim/lua/custom/init.lua
+  f_mappings.lua:
+    src: config/nvim/lua/custom/mappings.lua
+    dst: ~/.config/nvim/lua/custom/mappings.lua
+  f_plugins.lua:
+    src: config/nvim/lua/custom/plugins.lua
+    dst: ~/.config/nvim/lua/custom/plugins.lua
+  f_readme.md:
+    src: config/nvim/lua/custom/README.md
+    dst: ~/.config/nvim/lua/custom/README.md
 profiles:
   archlinux:
     dotfiles:
     - f_bash_aliases
-    - d_nvim
     - d_helix
     - d_neofetch
     - f_bashrc
@@ -61,3 +79,11 @@ profiles:
     - d_wlogout
     - d_wofi
     - d_kitty
+    - d_custom
+    - f_chadrc.lua
+    - d_configs
+    - f_highlights.lua
+    - f_init.lua
+    - f_mappings.lua
+    - f_plugins.lua
+    - f_readme.md
