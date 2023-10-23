@@ -29,10 +29,20 @@ switch_keyboard() {
 }
 
 if [[ "$1" == "reload" ]]; then
-    restart_waybar    
-elif [[ "$1" == "swkb" ]]; then
+    restart_waybar
+    update_theme
+    set_current_background
+  elif [[ "$1" == "swkb" ]]; then
     switch_keyboard
     restart_waybar
+  elif [[ "$1" == "swap_bg" ]]; then
+    current=$(swww query | grep background.jpg)
+    echo $current
+    if [[ -z "$current" ]]; then
+      swww img ~/.config/HyprV/backgrounds/background.jpg
+    else
+      swww img ~/.config/HyprV/backgrounds/background-old.jpg
+    fi
 fi
 
 # need to show the version and tooltip
@@ -45,7 +55,8 @@ TOOLTIP='Default Keybinds\n'\
 'SUPER + V = Toggle Float\n'\
 'SUPER + SPACE = App Launcher\n'\
 'SUPER + S = Screenshot\n'\
-'SUPER + T = Switch HyprV version\n'\
+'SUPER + T = Reload HyprV\n'\
+'SUPER + B = Switch wallpaper\n'\
 'ALT + V = Open clipboard manager'
 
 echo '{"text": "'$SET_USR'", "tooltip": "'$TOOLTIP'"}'

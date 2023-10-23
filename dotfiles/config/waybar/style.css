@@ -68,7 +68,6 @@ tooltip label {
 #custom-lock_screen,
 #clock,
 #battery,
-#pulseaudio,
 #network,
 #tray,
 #custom-username,
@@ -83,22 +82,37 @@ tooltip label {
     border: 0px;
 }
 
+#pulseaudio {
+    background: #1e1e2e;
+    opacity: 0.8;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 10px 0px 0px 10px;
+}
+
 #tray,
-#temperature,
 #backlight,
 #custom-launch_wofi,
 #cpu {
     border-radius: 10px 0px 0px 10px;
 }
 
+#temperature {
+  border-radius: 0px 10px 10px 0px;
+}
 
 #workspaces,
 #pulseaudio.microphone,
 #battery,
-#custom-power_btn,
-#disk {
+#custom-power_btn {
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
+}
+
+#disk {
+    border-radius: 0px;
 }
 
 #custom-power_btn {

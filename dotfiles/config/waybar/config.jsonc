@@ -11,13 +11,13 @@
         "hyprland/workspaces",
         "cpu",
         "memory",
-        "disk"
+        "disk",
+        "temperature"
     ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
-        "temperature",
         "custom/power_profile",
         "battery",
         "backlight",
