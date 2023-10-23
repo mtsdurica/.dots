@@ -3,13 +3,13 @@ alias ls='exa --icons'
 alias la='ls -laa'
 alias cd='>/dev/null cd'
 alias nf='clear && neofetch'
+alias cmatrix='cmatrix -C blue'
 
 # Text editors
 alias nv='nvim'
 alias hx='helix'
 
 # Config files
-alias nvcf='nv ~/.config/nvim/init.vim'
 alias hxcf='hx ~/.config/helix/config.toml'
 
 # Dotdrop
