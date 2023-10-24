@@ -2,6 +2,8 @@
 
 My personal dotfiles
 
+![](./screenshots/screen01.png)
+
 ## Base requirements
 
 ### For NVIDIA only
