@@ -24,7 +24,7 @@ noto-fonts-emoji lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 - **Distro**: [Arch](https://wiki.archlinux.org/)
 - **Wayland Compositor**: [Hyprland](https://hyprland.org/)
 - **Bar**: [Waybar](https://github.com/Alexays/Waybar)
-- **Notifications**: [mako](https://github.com/emersion/mako)
+- **Notifications**: [dunst](https://dunst-project.org/)
 - **Application Launcher**: wofi
 - **Shell**: bash with [oh-my-bash](https://github.com/ohmybash/oh-my-bash)
 - **Font**: [Hack Nerd Font](https://www.nerdfonts.com/font-downloads)
