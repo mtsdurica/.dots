@@ -71,11 +71,9 @@ dotfiles:
   f_zenburn.py:
     src: config/ranger/colorschemes/zenburn.py
     dst: ~/.config/ranger/colorschemes/zenburn.py
-    link: nolink
   f_rc.conf:
     src: config/ranger/rc.conf
     dst: ~/.config/ranger/rc.conf
-    link: nolink
 profiles:
   archlinux:
     dotfiles:
