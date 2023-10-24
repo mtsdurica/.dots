@@ -65,6 +65,12 @@ dotfiles:
   f_readme.md:
     src: config/nvim/lua/custom/README.md
     dst: ~/.config/nvim/lua/custom/README.md
+  d_dunst:
+    src: config/dunst
+    dst: ~/.config/dunst
+  d_ranger:
+    src: config/ranger
+    dst: ~/.config/ranger
 profiles:
   archlinux:
     dotfiles:
@@ -87,3 +93,5 @@ profiles:
     - f_mappings.lua
     - f_plugins.lua
     - f_readme.md
+    - d_dunst
+    - d_ranger

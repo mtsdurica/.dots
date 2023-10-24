@@ -16,7 +16,7 @@ restart_waybar() {
 }
 
 set_current_background() {
-    if [[ ! -z "$SET_BG" ]]; then
+    if [[ -z "$SET_BG" ]]; then
         #set the current background
         swww img ~/.config/HyprV/backgrounds/background.jpg
     else
@@ -36,13 +36,8 @@ if [[ "$1" == "reload" ]]; then
     switch_keyboard
     restart_waybar
   elif [[ "$1" == "swap_bg" ]]; then
-    current=$(swww query | grep background.jpg)
-    echo $current
-    if [[ -z "$current" ]]; then
-      swww img ~/.config/HyprV/backgrounds/background.jpg
-    else
-      swww img ~/.config/HyprV/backgrounds/background-old.jpg
-    fi
+    BG="$(find "/home/mts/.config/HyprV/backgrounds" -type f -name '*.jpg' -o -name '*.png' -o -name '*.gif'| shuf -n 1)"
+    swww img "$BG"
 fi
 
 # need to show the version and tooltip
