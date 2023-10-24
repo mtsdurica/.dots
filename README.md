@@ -21,15 +21,15 @@ noto-fonts-emoji lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 
 ## System Info
 
-- **Distro**: Arch
-- **Wayland Compositor**: Hyprland
-- **Bar**: Waybar
-- **Notifications**: mako
+- **Distro**: [Arch](https://wiki.archlinux.org/)
+- **Wayland Compositor**: [Hyprland](https://hyprland.org/)
+- **Bar**: [Waybar](https://github.com/Alexays/Waybar)
+- **Notifications**: [mako](https://github.com/emersion/mako)
 - **Application Launcher**: wofi
-- **Shell**: bash with oh-my-bash
-- **Font**: Hack Nerd Font
-- **Terminal**: kitty
-- **Text Editor**: neovim with NvChad
+- **Shell**: bash with [oh-my-bash](https://github.com/ohmybash/oh-my-bash)
+- **Font**: [Hack Nerd Font](https://www.nerdfonts.com/font-downloads)
+- **Terminal**: [kitty](https://sw.kovidgoyal.net/kitty/)
+- **Text Editor**: [neovim](https://neovim.io/) with [NvChad](https://nvchad.com/)
 - **Theme**: Adwaita-dark
-- **Icons Theme**: ePapirus-Dark
-- **Cursor Theme**: Catpuccin-Mocha-Dark
+- **Icons Theme**: [Papirus-Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- **Cursor Theme**: [Catppuccin-Mocha-Dark](https://github.com/catppuccin/cursors)
