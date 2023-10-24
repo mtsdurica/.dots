@@ -5,7 +5,6 @@ config:
   dotpath: dotfiles
   keepdot: false
   link_dotfile_default: absolute
-  link_on_import: nolink
   longkey: false
 dotfiles:
   f_bash_aliases:
@@ -74,6 +73,9 @@ dotfiles:
   f_rc.conf:
     src: config/ranger/rc.conf
     dst: ~/.config/ranger/rc.conf
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
 profiles:
   archlinux:
     dotfiles:
@@ -99,3 +101,4 @@ profiles:
     - d_dunst
     - f_zenburn.py
     - f_rc.conf
+    - d_rofi
