@@ -68,9 +68,14 @@ dotfiles:
   d_dunst:
     src: config/dunst
     dst: ~/.config/dunst
-  d_ranger:
-    src: config/ranger
-    dst: ~/.config/ranger
+  f_zenburn.py:
+    src: config/ranger/colorschemes/zenburn.py
+    dst: ~/.config/ranger/colorschemes/zenburn.py
+    link: nolink
+  f_rc.conf:
+    src: config/ranger/rc.conf
+    dst: ~/.config/ranger/rc.conf
+    link: nolink
 profiles:
   archlinux:
     dotfiles:
@@ -94,4 +99,5 @@ profiles:
     - f_plugins.lua
     - f_readme.md
     - d_dunst
-    - d_ranger
+    - f_zenburn.py
+    - f_rc.conf
