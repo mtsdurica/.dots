@@ -26,6 +26,7 @@ noto-fonts-emoji lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 - **Bar**: [Waybar](https://github.com/Alexays/Waybar)
 - **Notifications**: [dunst](https://dunst-project.org/)
 - **Application Launcher**: wofi
+- **Dots Manager**: [dotdrop](https://github.com/deadc0de6/dotdrop)
 - **Shell**: bash with [oh-my-bash](https://github.com/ohmybash/oh-my-bash)
 - **Font**: [Hack Nerd Font](https://www.nerdfonts.com/font-downloads)
 - **Terminal**: [kitty](https://sw.kovidgoyal.net/kitty/)
