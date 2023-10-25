@@ -24,5 +24,5 @@ My personal dotfiles.
   [Catppuccin-Mocha-Dark](https://github.com/catppuccin/cursors)
 
 ## Inspiration
-- [](https://github.com/SolDoesTech/HyprV4)
-- [](https://github.com/Vallen217/dotfiles/)
+- https://github.com/SolDoesTech/HyprV4
+- https://github.com/Vallen217/dotfiles/
