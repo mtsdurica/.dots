@@ -26,8 +26,8 @@ cp -f ~/.config/HyprV/backgrounds/background.jpg /usr/share/sddm/themes/sdt/wall
 
 #reset mako
 sleep 1
-pkill mako
-mako &
+pkill rofi
+rofi &
 
 #restart the waybar
 #killall -SIGUSR2 waybar <-- start causing web brwsers to close so switched to below...

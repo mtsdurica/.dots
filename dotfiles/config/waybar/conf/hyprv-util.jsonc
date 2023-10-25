@@ -1,11 +1,9 @@
 {
     "custom/username": {
-        //shows the current power profile and switches to next on click
         "exec": "~/.config/HyprV/hyprv_util",
         "return-type" : "json",
         "interval": 30,
         "format": "{}",
-        "on-click": "~/.config/HyprV/hyprv_util vswitch",
         "tooltip": true
     },
 

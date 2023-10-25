@@ -18,7 +18,7 @@ restart_waybar() {
 set_current_background() {
     if [[ -z "$SET_BG" ]]; then
         #set the current background
-        swww img ~/.config/HyprV/backgrounds/background.jpg
+        swww img ~/.config/HyprV/backgrounds/destiny.png
     else
         swww img $SET_BG
     fi
