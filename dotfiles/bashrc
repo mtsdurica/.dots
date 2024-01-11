@@ -141,3 +141,6 @@ source "$OSH"/oh-my-bash.sh
 # alias ohmybash="mate ~/.oh-my-bash"
 #
 
+
+# Created by `pipx` on 2023-11-29 13:32:09
+export PATH="$PATH:/home/mts/.local/bin"
