@@ -20,6 +20,8 @@ local sources = {
 			"-style=Microsoft",
 		},
 	}),
+
+    b.formatting.black
 }
 
 null_ls.setup({
