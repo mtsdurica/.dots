@@ -9,7 +9,7 @@
 
 window#waybar {
     background: rgba(21, 18, 27, 0);
-    color: #cdd6f4;
+    color: #c8c8c8;
 }
 
 tooltip {
@@ -22,17 +22,17 @@ tooltip {
 }
 
 tooltip label {
-    color: #cdd6f4;
+    color: #c8c8c8;
 }
 
 #workspaces button {
     padding: 5px;
-    color: #313244;
+    color: #555555;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: #c8c8c8;
 }
 
 #workspaces button.focused {
@@ -48,8 +48,8 @@ tooltip label {
 }
 
 #workspaces button:hover {
-    background: #11111b;
-    color: #cdd6f4;
+    background: #1e1e2e;
+    color: #feffff;
     border-radius: 10px;
 }
 
@@ -75,7 +75,7 @@ tooltip label {
 #workspaces,
 #backlight {
     background: #1e1e2e;
-    opacity: 0.8;
+    opacity: 0.7;
     padding: 0px 10px;
     margin: 3px 0px;
     margin-top: 10px;
@@ -120,12 +120,12 @@ tooltip label {
 }
 
 #temperature.critical {
-    color: #e92d4d;
+    color: #be7472;
 }
 
 
 #workspaces {
-    padding-right: 0px;
+    padding-right: 5px;
     padding-left: 5px;
 }
 
@@ -142,24 +142,24 @@ tooltip label {
 }
 
 #custom-launch_wofi {
-    color: #89b4fa;
+    color: #7199bc;
     margin-left: 10px;
     border-right: 0px;
 }
 
 #pulseaudio {
-    color: #89b4fa;
+    color: #9fbdde;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio.microphone {
-    color: #cba6f7;
+    color: #989abc;
     border-left: 0px;
     border-right: 0px;
 }
 
 #battery {
-    color: #a6e3a1;
+    color: #97bb98;
     border-left: 0px;
 }
