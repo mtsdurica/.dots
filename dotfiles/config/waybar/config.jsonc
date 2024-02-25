@@ -39,14 +39,14 @@
     "format": "{}",
     "rewrite": {
       "": "Desktop",
-      "(\\d\\. )?(.*) - Google Chrome": "<span color=\"#4285F4\"></span>  $2 ",
-      "nv (.*)": "<span color=\"#57A143\"></span>  $1",
-      "nvim (.*)": "<span color=\"#57A143\"></span>  $1",
-      "nv": "<span color=\"#57A143\">  Neovim</span> ",
-      "nvim": "<span color=\"#57A143\">  Neovim</span> ",
-      "ranger": "<span color=\"#ffffff\">  ranger</span>",
-      "ranger (.*)": "<span color=\"#ffffff\"></span>  $1",
-      "rofi - drun": "<span color=\"#a855f7\"> rofi</span>"
+      "(\\d\\. )?(.*) - Google Chrome": "<span color=\"#7199bc\"></span>  $2 ",
+      "nv (.*)": "<span color=\"#709772\"></span>  $1",
+      "nvim (.*)": "<span color=\"#709772\"></span>  $1",
+      "nv": "<span color=\"#709772\">  Neovim</span> ",
+      "nvim": "<span color=\"#709772\">  Neovim</span> ",
+      "ranger": "<span color=\"#c8c8c8\">  ranger</span>",
+      "ranger (.*)": "<span color=\"#c8c8c8\"></span>  $1",
+      "rofi - drun": "<span color=\"#989abc\"> rofi</span>"
     },
     "separate-outputs": false
   },
