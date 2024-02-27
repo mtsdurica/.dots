@@ -76,9 +76,6 @@ dotfiles:
   d_rofi:
     src: config/rofi
     dst: ~/.config/rofi
-  d_tmux:
-    src: config/tmux
-    dst: ~/.config/tmux
   f_tmux.conf:
     src: config/tmux/tmux.conf
     dst: ~/.config/tmux/tmux.conf
@@ -108,5 +105,4 @@ profiles:
     - f_zenburn.py
     - f_rc.conf
     - d_rofi
-    - d_tmux
     - f_tmux.conf
