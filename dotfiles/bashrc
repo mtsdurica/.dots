@@ -144,4 +144,5 @@ source "$OSH"/oh-my-bash.sh
 
 # Created by `pipx` on 2023-11-29 13:32:09
 export PATH="$PATH:/home/mts/.local/bin"
+export _ZO_ECHO='0'
 eval "$(zoxide init bash)"

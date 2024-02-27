@@ -6,12 +6,24 @@ local sources = {
 
 	-- webdev stuff
 	b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
-	b.formatting.prettier.with({ filetypes = { "html", "markdown", "css" } }), -- so prettier works only on these filetypes
+	b.formatting.prettier.with({
+		filetypes = {
+			"html",
+			"markdown",
+			"css",
+		},
+		extra_args = function(params)
+			return params.options and params.options.tabSize and {
+				"--tab-width",
+                params.options.tabSize
+			}
+		end,
+	}), -- so prettier works only on these filetypes
 
 	-- Lua
 	b.formatting.stylua,
 
-    -- PHP
+	-- PHP
 	b.formatting.phpcsfixer,
 
 	-- cpp
@@ -21,7 +33,7 @@ local sources = {
 		},
 	}),
 
-    b.formatting.black
+	b.formatting.black,
 }
 
 null_ls.setup({
