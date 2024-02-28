@@ -39,6 +39,7 @@
     "format": "{}",
     "rewrite": {
       "": "Desktop",
+      "tmux": " tmux",
       "(\\d\\. )?(.*) - Google Chrome": "<span color=\"#7199bc\"></span>  $2 ",
       "nv (.*)": "<span color=\"#709772\"></span>  $1",
       "nvim (.*)": "<span color=\"#709772\"></span>  $1",
