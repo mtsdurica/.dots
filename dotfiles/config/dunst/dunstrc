@@ -49,7 +49,7 @@
  
 
     ### Text ###
-    font = Hack Nerd Font 11
+    font = JetBrainsMono Nerd Font Mono 11
 
 	line_height = 0
 

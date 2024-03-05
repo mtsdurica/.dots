@@ -1,7 +1,7 @@
 configuration {
 	show-icons: true;
 	terminal: "kitty";
-	font: "Hack Nerd Font 12";
+	font: "JetBrainsMono Nerd Font 12";
 	icon-theme: "Papirus";
 }
 @theme "~/.config/rofi/theme.rasi"
