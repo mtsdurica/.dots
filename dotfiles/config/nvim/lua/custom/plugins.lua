@@ -2,12 +2,17 @@ local overrides = require("custom.configs.overrides")
 
 ---@type NvPluginSpec[]
 local plugins = {
-
+	{
+		"barrett-ruth/live-server.nvim",
+		build = "sudo npm -g live-server",
+		cmd = { "LiveServerStart", "LiveServerStop" },
+		config = true,
+	},
 	-- Override plugin definition options
 	{
-        "christoomey/vim-tmux-navigator",
-        lazy = false,
-    },
+		"christoomey/vim-tmux-navigator",
+		lazy = false,
+	},
 
 	{
 		"neovim/nvim-lspconfig",

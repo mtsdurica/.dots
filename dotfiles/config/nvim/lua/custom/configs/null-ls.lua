@@ -5,9 +5,18 @@ local b = null_ls.builtins
 local sources = {
 
 	-- webdev stuff
-	b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
+	-- b.formatting.deno_fmt.with({
+	-- 	filetypes ={
+	--            "typescriptreact",
+	--        },
+	--        extra_args = {
+	-- 		"--use_tabs",
+	-- 	},
+	-- }), -- choosed deno for ts/js files cuz its very fast!
+
 	b.formatting.prettier.with({
 		filetypes = {
+            "typescriptreact",
 			"html",
 			"markdown",
 			"css",
@@ -15,7 +24,7 @@ local sources = {
 		extra_args = function(params)
 			return params.options and params.options.tabSize and {
 				"--tab-width",
-                params.options.tabSize
+				params.options.tabSize,
 			}
 		end,
 	}), -- so prettier works only on these filetypes
@@ -33,6 +42,7 @@ local sources = {
 		},
 	}),
 
+	-- python
 	b.formatting.black,
 }
 
