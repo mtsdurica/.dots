@@ -4,21 +4,14 @@ local b = null_ls.builtins
 
 local sources = {
 
-	-- webdev stuff
-	-- b.formatting.deno_fmt.with({
-	-- 	filetypes ={
-	--            "typescriptreact",
-	--        },
-	--        extra_args = {
-	-- 		"--use_tabs",
-	-- 	},
-	-- }), -- choosed deno for ts/js files cuz its very fast!
+    -- Webdev
+    b.formatting.rustywind,
 
 	b.formatting.prettier.with({
 		filetypes = {
-            "typescriptreact",
 			"html",
 			"markdown",
+            "typescriptreact",
 			"css",
 		},
 		extra_args = function(params)
