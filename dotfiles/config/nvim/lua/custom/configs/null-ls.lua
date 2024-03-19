@@ -9,7 +9,8 @@ local sources = {
 
 	b.formatting.prettier.with({
 		filetypes = {
-			"html",
+			"json",
+            "html",
 			"markdown",
             "typescriptreact",
 			"css",
