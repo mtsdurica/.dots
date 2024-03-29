@@ -40,30 +40,6 @@ dotfiles:
   d_kitty:
     src: config/kitty
     dst: ~/.config/kitty
-  d_custom:
-    src: config/nvim/lua/custom
-    dst: ~/.config/nvim/lua/custom
-  f_chadrc.lua:
-    src: config/nvim/lua/custom/chadrc.lua
-    dst: ~/.config/nvim/lua/custom/chadrc.lua
-  d_configs:
-    src: config/nvim/lua/custom/configs
-    dst: ~/.config/nvim/lua/custom/configs
-  f_highlights.lua:
-    src: config/nvim/lua/custom/highlights.lua
-    dst: ~/.config/nvim/lua/custom/highlights.lua
-  f_init.lua:
-    src: config/nvim/lua/custom/init.lua
-    dst: ~/.config/nvim/lua/custom/init.lua
-  f_mappings.lua:
-    src: config/nvim/lua/custom/mappings.lua
-    dst: ~/.config/nvim/lua/custom/mappings.lua
-  f_plugins.lua:
-    src: config/nvim/lua/custom/plugins.lua
-    dst: ~/.config/nvim/lua/custom/plugins.lua
-  f_readme.md:
-    src: config/nvim/lua/custom/README.md
-    dst: ~/.config/nvim/lua/custom/README.md
   d_dunst:
     src: config/dunst
     dst: ~/.config/dunst
@@ -79,6 +55,15 @@ dotfiles:
   f_tmux.conf:
     src: config/tmux/tmux.conf
     dst: ~/.config/tmux/tmux.conf
+  f_init.lua:
+    src: config/nvim/init.lua
+    dst: ~/.config/nvim/init.lua
+  f_readme.md:
+    src: config/nvim/README.md
+    dst: ~/.config/nvim/README.md
+  d_lua:
+    src: config/nvim/lua
+    dst: ~/.config/nvim/lua
 profiles:
   archlinux:
     dotfiles:
@@ -93,16 +78,11 @@ profiles:
     - d_wlogout
     - d_wofi
     - d_kitty
-    - d_custom
-    - f_chadrc.lua
-    - d_configs
-    - f_highlights.lua
-    - f_init.lua
-    - f_mappings.lua
-    - f_plugins.lua
-    - f_readme.md
     - d_dunst
     - f_zenburn.py
     - f_rc.conf
     - d_rofi
     - f_tmux.conf
+    - f_init.lua
+    - f_readme.md
+    - d_lua

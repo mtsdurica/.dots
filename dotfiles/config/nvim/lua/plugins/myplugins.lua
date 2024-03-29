@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require("configs.overrides")
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -21,13 +21,13 @@ local plugins = {
 			{
 				"jose-elias-alvarez/null-ls.nvim",
 				config = function()
-					require("custom.configs.null-ls")
+					require("configs.null-ls")
 				end,
 			},
 		},
 		config = function()
-			require("plugins.configs.lspconfig")
-			require("custom.configs.lspconfig")
+			require("nvchad.configs.lspconfig")
+			require("configs.lspconfig")
 		end, -- Override to setup mason-lspconfig
 	},
 
